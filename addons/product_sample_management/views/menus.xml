@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!--                          MENÚS                              -->
+    <!-- ============================================================ -->
+
+    <!-- Menú raíz -->
+    <menuitem id="menu_sample_root"
+              name="Muestras"
+              sequence="90"
+              web_icon="product_sample_management,static/description/icon.png"/>
+
+    <!-- Submenú: Solicitudes -->
+    <menuitem id="menu_sample_requests"
+              name="Solicitudes de muestra"
+              parent="menu_sample_root"
+              action="action_product_sample_request"
+              sequence="10"/>
+
+</odoo>

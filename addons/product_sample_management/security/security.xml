@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Categoría del módulo -->
+    <record id="module_category_sample_management" model="ir.module.category">
+        <field name="name">Muestras</field>
+        <field name="description">Gestión de muestras de producto</field>
+        <field name="sequence">20</field>
+    </record>
+
+    <!-- Grupo: Responsable de Muestras -->
+    <record id="group_sample_manager" model="res.groups">
+        <field name="name">Responsable de Muestras</field>
+        <field name="category_id" ref="module_category_sample_management"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_sample_request_user,product.sample.request.user,model_product_sample_request,base.group_user,1,1,1,0
+access_product_sample_request_manager,product.sample.request.manager,model_product_sample_request,group_sample_manager,1,1,1,1
+access_product_sample_reject_wizard_user,product.sample.reject.wizard.user,model_product_sample_reject_wizard,base.group_user,1,1,1,0
+access_product_sample_reject_wizard_manager,product.sample.reject.wizard.manager,model_product_sample_reject_wizard,group_sample_manager,1,1,1,1
